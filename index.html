@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VINCAM | Camera Store</title>
+
+<title>VINCAM Store</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
 
 <header class="navbar">
@@ -26,65 +30,121 @@
 
 </header>
 
+
 <section class="hero">
 
 <div class="hero-text">
 
-<h1>كاميرات احترافية لصناع المحتوى</h1>
+<h1>أفضل كاميرات التصوير</h1>
 
-<p>أفضل الكاميرات للتصوير الفوتوغرافي والفيديو</p>
+<p>معدات تصوير احترافية لصناع المحتوى</p>
 
-<a href="#products" class="btn">تصفح المنتجات</a>
+<a href="#products" class="btn">تصفح الكاميرات</a>
 
 </div>
 
 </section>
 
-<section id="products" class="products">
+
+<section class="products" id="products">
 
 <h2>الكاميرات المتوفرة</h2>
 
 <div class="product-grid">
 
+
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32">
+<div class="gallery">
+
+<img id="main1" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" class="main-img">
+
+<div class="thumbs">
+
+<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" onclick="changeImage(this,'main1')">
+
+<img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac" onclick="changeImage(this,'main1')">
+
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="changeImage(this,'main1')">
+
+</div>
+
+</div>
 
 <div class="card-body">
 
 <h3>Sony A7 IV</h3>
 
-<p>كاميرا احترافية بدقة 33MP مع تصوير 4K</p>
+<p>كاميرا احترافية بدقة 33MP وتصوير 4K</p>
 
 <span class="price">18500 درهم</span>
 
-<button class="view">عرض المنتج</button>
+<a href="https://wa.me/212684092146?text=أريد شراء Sony A7 IV">
+
+<button class="view">اطلب الآن</button>
+
+</a>
 
 </div>
 
 </div>
+
+
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac">
+<div class="gallery">
+
+<img id="main2" src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac" class="main-img">
+
+<div class="thumbs">
+
+<img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac" onclick="changeImage(this,'main2')">
+
+<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" onclick="changeImage(this,'main2')">
+
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="changeImage(this,'main2')">
+
+</div>
+
+</div>
 
 <div class="card-body">
 
 <h3>Canon R6</h3>
 
-<p>أداء ممتاز في الفيديو والإضاءة الضعيفة</p>
+<p>كاميرا ممتازة للفيديو والإضاءة الضعيفة</p>
 
 <span class="price">16900 درهم</span>
 
-<button class="view">عرض المنتج</button>
+<a href="https://wa.me/212684092146?text=أريد شراء Canon R6">
+
+<button class="view">اطلب الآن</button>
+
+</a>
 
 </div>
 
 </div>
+
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<div class="gallery">
+
+<img id="main3" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" class="main-img">
+
+<div class="thumbs">
+
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="changeImage(this,'main3')">
+
+<img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac" onclick="changeImage(this,'main3')">
+
+<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" onclick="changeImage(this,'main3')">
+
+</div>
+
+</div>
 
 <div class="card-body">
 
@@ -94,15 +154,21 @@
 
 <span class="price">13200 درهم</span>
 
-<button class="view">عرض المنتج</button>
+<a href="https://wa.me/212684092146?text=أريد شراء Fujifilm XT4">
+
+<button class="view">اطلب الآن</button>
+
+</a>
 
 </div>
 
 </div>
+
 
 </div>
 
 </section>
+
 
 <footer>
 
@@ -110,11 +176,15 @@
 
 </footer>
 
+
 <a class="whatsapp" href="https://wa.me/212684092146">
 
 <i class="fab fa-whatsapp"></i>
 
 </a>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
