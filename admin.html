@@ -2,31 +2,51 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>لوحة تحكم Vincam</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VINCAM</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>لوحة تحكم الأدمن</h2>
+<header>
+<div class="logo">VINCAM</div>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#products">الكاميرات</a>
+<a href="https://wa.me/212684092146" target="_blank">واتساب</a>
+</nav>
+</header>
 
-<input type="password" id="adminPass" placeholder="كلمة مرور الأدمن">
-<button onclick="login()">دخول</button>
+<section class="hero">
+<h1>اكتشف عالم التصوير الاحترافي</h1>
+<p>أفضل كاميرات التصوير بأفضل جودة</p>
+<a href="#products" class="btn">تسوق الآن</a>
+</section>
 
-<div id="adminPanel" style="display:none;">
+<section class="products" id="products">
 
-<h3>إضافة منتج</h3>
-
-<input type="text" id="title" placeholder="اسم الكاميرا">
-<input type="text" id="price" placeholder="السعر">
-<textarea id="desc" placeholder="الوصف"></textarea>
-<input type="file" id="images" multiple>
-<button onclick="addProduct()">إضافة المنتج</button>
-
-<h3>المنتجات الحالية</h3>
-<div id="adminProducts"></div>
-
+<div class="product">
+<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" />
+<h3>Sony A7 IV</h3>
+<p>كاميرا احترافية بدقة عالية</p>
+<span>18,500 درهم</span>
+<a href="product.html">عرض التفاصيل</a>
 </div>
 
-<script type="module" src="admin.js"></script>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1519183071298-a2962be90b8e" />
+<h3>Canon R6</h3>
+<p>أفضل أداء في الإضاءة المنخفضة</p>
+<span>16,900 درهم</span>
+<a href="product.html">عرض التفاصيل</a>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 VINCAM - Morocco</p>
+<a href="https://www.tiktok.com/@Vincam_morocco" target="_blank">TikTok</a>
+</footer>
+
 </body>
 </html>
